@@ -33,8 +33,8 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>${variables.name == null ? "Name" : variables.name} ${
-    variables.lastName == null ? "Last Name" : variables.lastName
+          <h1>${variables.name == null ? "Your name" : variables.name} ${
+    variables.lastName == null ? "Your lastname" : variables.lastName
   }</h1>
           <h2>${variables.role == null ? "selector role" : variables.role}</h2>
           <h3>${variables.country == null ? "country" : variables.country} 
